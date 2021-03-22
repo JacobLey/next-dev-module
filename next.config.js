@@ -6,10 +6,6 @@ module.exports = {
     },
     webpack: (defaultConfig, opts) => {
 
-        defaultConfig.experiments = {
-            ...defaultConfig.experiments,
-            topLevelAwait: true,
-        };
         defaultConfig.module.rules.push({
             test: {
                 and: [
